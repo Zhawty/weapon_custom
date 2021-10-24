@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weapon_custom by SS Workplace</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <div class="icon"><i class="fas fa-bomb"></i></div>
+            <button id="guns" onclick="ChangeModal('guns')">ARMAS</button>
+            <button id="attachs" onclick="ChangeModal('attachs')">ATTACHS</button>
+            <h2 class="close" onclick="CloseAll()">X</h2>
+        </div>
+        <div id="gun">
+            <input type="text" name="url" id="url" placeholder="LINK AQUI">
+            <div class="preview">
+                <h1>PREVIEW</h1>
+                <div id="preview-photo">
+                    <img id="preview" onclick="ChangeTexture()" src="https://i2.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Neon-Tanjim.gif?fit=750%2C354&quality=80&strip=all&ssl=1" alt="">
+                </div>
+            </div>
+            <input type="number" id="h" placeholder="512">
+            <h2>X</h2>
+            <input type="number" id="w" placeholder="512">
+            <div class="options-section">
+                <button id="confirm" onclick="ChangeTexture()">CONFIRMAR</button>
+                <button id="restore">RESTAURAR</button>
+            </div>
+        </div>
+
+        <div id="attach">
+            <input type="text" name="url" id="url" placeholder="LINK AQUI">
+            <div class="preview">
+                <h1>PREVIEW</h1>
+                <div id="preview-photo">
+                    <img id="preview" onclick="ChangeTexture()" src="https://i2.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Neon-Tanjim.gif?fit=750%2C354&quality=80&strip=all&ssl=1" alt="">
+                </div>
+            </div>
+            <input type="number" id="h" placeholder="512">
+            <h2>X</h2>
+            <input type="number" id="w" placeholder="512">
+            <button id="equip" onclick="EquipAttachs()">EQUIPAR ATTACHS</button>
+            <div class="options-section">
+                <button id="confirm" onclick="ChangeTexture()">CONFIRMAR</button>
+                <button id="restore">RESTAURAR</button>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
